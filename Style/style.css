@@ -1,0 +1,12 @@
+body{
+	background: gray;
+}
+.container{
+	height: 400px;
+	max-width: var(--c-w);
+	padding: var(--p);
+	margin: 0 auto;
+}
+.container__right{
+	padding-left:  calc((100% - var(--c-w))/2);
+}
