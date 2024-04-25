@@ -13,7 +13,7 @@ body{
 }
 .header::after{
 	content: "";
-	background: url(img/Vector.svg) center bottom/contain no-repeat	;
+	background: url(../img/Vector.svg) center bottom/contain no-repeat	;
 	width: 100%;
 	height: 20%;
 	inset: auto auto 0 0;
