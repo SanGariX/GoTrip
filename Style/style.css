@@ -173,6 +173,11 @@ max-width: 520px;
 margin-bottom: 60px;
 }
 .header__present__btn {
+	overflow: hidden;
+	width: 263px;
+	height: 91px;
+	display: flex;
+	align-items: center;
 font-size: 25px;
 font-weight: 600;
 padding:25px 50px;
@@ -180,11 +185,6 @@ border-radius: 27px;
 background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
 color: #fff;
 position: relative;
-z-index: 1;
-}
-.header__present__btn:hover{
-	animation: gradient 0.4s linear infinite;
-	
 }
 .gradient__btn{
 	inset: 0;
@@ -193,15 +193,75 @@ z-index: 1;
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: linear-gradient(129.54deg,#ff483e 5.03%, #ff5b25 95.57% );
+	background: linear-gradient(129.54deg,#fd4f45 40.03%, #ff7f54 85.57% );
 	transition: opacity .2s linear;
 	border-radius: 27px;
 }
-.gradient__btn:hover{
+.hover__box:hover ~ div.gradient__btn {
 	opacity: 1;
 }
-.header__present__btn > p{
-	position: relative;
+.btn__text{
+	position: absolute;
 	z-index: 3;
+	/* transition: opacity 0.01s linear 0.2s; */
+}
+.hover__box:hover ~ p.btn__text{
+	animation: opacity 0.01s linear 0.16s forwards;
+}
+@keyframes opacity{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.btn__text__down{
+	transform: translateY(-61px);
+	white-space: nowrap;
+	z-index: 3;
+}
+.hover__box:hover ~ p.btn__text__down{
+	animation: down__text 0.6s linear 0.16s forwards;
 
+}
+@keyframes down__text{
+	0%{
+		transform: translateY(-61px);
+	}
+	20%{
+		transform: translateY(0px);
+	}
+	37%{
+		transform: translateY(-25px);
+	}
+	40%{
+		transform: translateY(-27px);
+	}
+	55%{
+		transform: translateY(0px);
+	}
+	75%{
+		transform: translateY(-10px);
+	}
+	80%{
+		transform: translateY(-13px);
+	}
+	90%{
+		transform: translateY(0px);
+	}
+	95%{
+		transform: translateY(2px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+.hover__box{
+	position: absolute;
+	inset: 0;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
 }
