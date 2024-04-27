@@ -73,6 +73,9 @@
         display: block;
         order: 3;
         justify-self: end;
+        aspect-ratio: 1;
+        width: 24px;
+        background-color: red;
     }
     .logo__text{
         order: 1;
