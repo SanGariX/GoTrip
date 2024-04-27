@@ -1,5 +1,8 @@
 body{
 	background: gray;
+	position: relative;
+	z-index: -3;
+
 }
 .container{
 	max-width: var(--c-w);
@@ -8,10 +11,10 @@ body{
 }
 .header{
 	background:linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%);
-	height: 150vh;
 	position: relative;
-	max-height: 1200px;
-
+	height: 940px;
+	z-index: -2;
+	overflow: hidden;
 }
 .header::after{
 	content: "";
@@ -26,10 +29,13 @@ body{
 	padding-left:  calc((100% - var(--c-w))/2);
 }
 .nav {
+	height: 80px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	color: #FFFFFF;
+	position: relative;
+	z-index: 2;
 }
 .logo__text {
 	display: inline-block;
@@ -99,6 +105,7 @@ body{
 	line-height: 1.5;
 	padding: 10px 40px;
 	border-radius: 100px;
+	white-space: nowrap;
 }
 .header__btn2{
 	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
@@ -143,7 +150,14 @@ body{
 	border-radius: 10px;
 }
 .header__present{
-	margin-top: 200px;
+	margin-top: 60px;
+	height: 82%;
+}
+.header__present > div.container{
+	background: url(../img/doted.png) center top no-repeat, url(../img/linear.png) right 50px no-repeat, url(../img/doted.png) right 500px no-repeat, url(../img/linear.png) center 550px no-repeat;
+	height: 100%;
+	padding-bottom: 0;
+	position: relative;
 }
 .header__strong {
 font-size: 18px;
@@ -220,16 +234,17 @@ position: relative;
 	transform: translateY(-61px);
 	white-space: nowrap;
 	z-index: 3;
+	display: none;
 }
 .hover__box:hover ~ p.btn__text__down{
 	animation: down__text 0.6s linear 0.16s forwards;
-
+	display: block;
 }
 @keyframes down__text{
 	0%{
 		transform: translateY(-61px);
 	}
-	20%{
+	25%{
 		transform: translateY(0px);
 	}
 	37%{
@@ -264,4 +279,31 @@ position: relative;
 	width: 100%;
 	height: 100%;
 	background-color: transparent;
+}
+.header__tight__img {
+	object-fit: cover;
+	width: clamp(10px,55vw,880px);
+	position: absolute;
+	inset: auto auto 5px 40%;
+	z-index: 1;
+}
+.header__left{
+	position: relative;
+	z-index: 2;
+}
+.header__checkbox__btn{
+	position: absolute;
+	display: none;
+}
+.header__label__open{
+	display: none;
+	cursor: pointer;
+	transition: transform  .4s linear ;
+}
+.header__checkbox__btn:checked ~ ul.header__list{
+	transform: translateX(0px);
+	opacity: 1;
+}
+.header__checkbox__btn:checked ~ label.header__label__open{
+	transform: rotateY(180deg);
 }

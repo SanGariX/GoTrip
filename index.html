@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>GoTrip</title>
 	<link rel="stylesheet" href="Style/style.css">
 	<link rel="stylesheet" href="Style/reset.css">
+	<link rel="stylesheet" href="Style/media.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -17,6 +18,11 @@
 				<h1 class="logo__text">
 					<a href="#" class="logo__link">GoTrip</a>
 				</h1>
+				<input id="headerbtn" type="checkbox" class="header__checkbox__btn">
+				<label class="header__label__open" for="headerbtn">
+					<div class="div"><img class="header__nav__btn" src="/img/btn.svg" alt=""></div>
+				</label>
+				
 				<ul class="header__list">
 					<li class="header__list__item">
 						<a href="#" class="header__list__link header__list__link__active">
@@ -53,27 +59,31 @@
 						<div class="active__item__btn active__item__btn2"></div>
 					</li>
 				</ul>
+				
 			</nav>
 		</div>
 		<section class="header__present">
 			<div class="container">	
-				<strong class="header__strong">
-					exsplore the world
-				</strong>
-				<h2 class="header__title">
-					Explore The Natural
-					Beauty Of Halmahera
-					With Us
-				</h2>
-				<p class="header__text">
-					explore the beauty of god's earth in a beautiful forest and have fun
-				</p>
-				<button class="header__present__btn">
-					<div class="hover__box"></div>
-					<p class="btn__text__down">Exsplore Now</p>
-					<p class="btn__text">Exsplore Now</p>
-					<div class="gradient__btn"></div>
-				</button>
+				<div class="header__left">
+					<strong class="header__strong">
+						exsplore the world
+					</strong>
+					<h2 class="header__title">
+						Explore The Natural
+						Beauty Of Halmahera
+						With Us
+					</h2>
+					<p class="header__text">
+						explore the beauty of god's earth in a beautiful forest and have fun
+					</p>
+					<button class="header__present__btn">
+						<div class="hover__box"></div>
+						<p class="btn__text__down">Exsplore Now</p>
+						<p class="btn__text">Exsplore Now</p>
+						<div class="gradient__btn"></div>
+					</button>
+				</div>
+				<img src="img/women.png" alt="women" class="header__tight__img">
 			</div>
 		</section>
 	</header>

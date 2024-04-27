@@ -1,0 +1,83 @@
+@media (max-width: 1090px){
+    .header__present > div.container{
+        background: url(../img/doted.png) center top no-repeat, url(../img/linear.png) right 100px no-repeat, url(../img/doted.png) right 500px no-repeat, url(../img/linear.png) 20vw 620px no-repeat;
+    }
+    .header__title{
+        margin: 2.7vw 0 4.5vw;
+    }
+    .nav{
+        grid-template-columns: 0.5fr 1fr 0.8fr;
+    }
+}
+@media (max-width: 800px){
+    .nav{
+        grid-template-columns: 0.35fr 1fr 0.8fr;
+    }
+    .header__title{
+        font-size: clamp(10px, 8.5vw ,55px);
+    }
+    .header__text{
+        font-size: clamp(10px, 4vw, 25px);
+    }
+    .header__present__btn{
+        width: clamp(100px,36vw,260px);
+        height: clamp(10px,12vw,90px);
+    }
+    .btn__text{
+        font-size: clamp(5px,3.4vw,25px);
+        position: relative;
+        white-space: nowrap;
+        opacity: 1 !important;
+    }
+    
+    .btn__text__down{
+        font-size: clamp(5px,3.4vw,25px);
+        white-space: nowrap;
+        display: none;
+    }
+    .hover__box:hover ~ p.btn__text__down{
+        padding: 0 0 0 22vw;
+        display: none;
+    }
+    .header__present__btn{
+        justify-content: center;
+    }
+}
+@media (max-width: 700px){
+    .header__list{
+        position: absolute;
+        width: 180px;
+        height: 400px;
+        z-index: 4;
+        inset: 100px 0 0 auto;
+        flex-direction: column;
+        justify-content: space-around;
+        background:linear-gradient(132.05deg, #428E5F -17.38%, #2b635f 78.4%);
+        border-radius: 10px;
+        border-top-left-radius: 90%;
+        border-bottom-left-radius: 100px;
+        align-items: end;
+        padding: 30px;
+        padding-right: 40px;
+        transform: translateX(210px);
+        transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+        opacity: 0;
+    }
+    .header__left{
+        z-index: 1;
+    }
+    .nav{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .header__label__open{
+        display: block;
+        order: 3;
+        justify-self: end;
+    }
+    .logo__text{
+        order: 1;
+    }
+    .header__list__btn{
+        order: 2;
+    }
+}
