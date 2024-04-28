@@ -33,6 +33,7 @@
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 	text-rendering:optimizeLegibility;
+	color: var(--b-c);
 }
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
