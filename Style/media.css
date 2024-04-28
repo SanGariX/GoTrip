@@ -120,7 +120,7 @@
         background: url(../img/doted.png) center top no-repeat, url(../img/doted.png) right 500px no-repeat, url(../img/linear.png) left 550px no-repeat;
     }
     .header{
-        height: 750px;
+        height: 800px;
     }
     .header__title{
         max-width: 400px;
@@ -129,7 +129,8 @@
         max-width: 350px;
     }
 }
-@media (max-width: 400px){
+
+@media (max-width: 450px){
     .header__tight__img{
         display: none;
     }
