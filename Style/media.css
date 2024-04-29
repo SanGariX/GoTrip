@@ -1,3 +1,37 @@
+@media (max-width: 1180px){
+    .slide__inner{
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .slide__inner *{
+        text-align: center;
+    }
+    .slide__right{
+        display: none;
+    }
+    .comment__img{
+        display: none;
+    }
+    .commment__inner{
+        align-items: center;
+        justify-content: center;
+    }
+    .commment__inner *{
+        text-align: center;
+    }
+    .comment__discription{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
 @media (max-width: 1090px){
     .header__present > div.container{
         background: url(../img/doted.png) center top no-repeat, url(../img/linear.png) right 100px no-repeat, url(../img/doted.png) right 500px no-repeat, url(../img/linear.png) 20vw 620px no-repeat;
@@ -28,12 +62,16 @@
         position: relative;
         white-space: nowrap;
         opacity: 1 !important;
+        transition: font-size 0.3s linear;
     }
     
     .btn__text__down{
         font-size: clamp(5px,3.4vw,25px);
         white-space: nowrap;
         display: none;
+    }
+    .hover__box:active ~ p.btn__text{
+        font-size: 120%;
     }
     .hover__box:hover ~ p.btn__text__down{
         padding: 0 0 0 22vw;
@@ -65,7 +103,7 @@
         padding: 30px;
         padding-right: 40px;
         transform: translateX(210px);
-        transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+        transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         opacity: 0;
     }
     .header__left{
