@@ -179,6 +179,26 @@
   .header__btn {
     padding: 10px 30px;
   }
+  .subscribe__title + form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .slide__title {
+    font-size: 45px;
+  }
+  .comment__people__img {
+    width: 80px;
+  }
+  .slide__left {
+    padding: auto 5px;
+  }
+  .star__rank {
+    width: 250px;
+  }
+  .subscribe__title {
+    font-size: 45px;
+  }
 }
 @media (max-width: 500px) {
   .header__present > div.container {
