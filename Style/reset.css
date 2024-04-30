@@ -1,67 +1,117 @@
 /*Початок між сторінкового стилю */
-.header__list__link__active{
-	display: block;
-	position: relative;
+.header__list__link__active {
+  display: block;
+  position: relative;
 }
-
-.header__list__link__active::after{
-	content: "";
-	box-sizing: content-box;
-	position: absolute;
-	inset: auto auto -3px 0;
-	min-width: 0px;
-	height: 3px;
-	padding-right: 25px;
-	background-color: #fff;
-	border-start-end-radius: 1.5px;
-	border-end-end-radius: 1.5px;
+.footer__list * .header__list__link__active::after {
+  background-color: #ff7c4e;
+}
+.header__list__link__active::after {
+  content: "";
+  box-sizing: content-box;
+  position: absolute;
+  inset: auto auto -3px 0;
+  min-width: 0px;
+  height: 3px;
+  padding-right: 25px;
+  background-color: #fff;
+  border-start-end-radius: 1.5px;
+  border-end-end-radius: 1.5px;
 }
 /*Кінець між сторінкового стилю */
 /* _________ */
-:root{
-	--b-c:#0F1F1C;
-	--g-c: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
-	--c-w:1330px;
-	--p:15px;
+:root {
+  --b-c: #0f1f1c;
+  --g-c: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+  --c-w: 1330px;
+  --p: 15px;
 }
 /* _________ */
 /*Початок обнулення */
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
-	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
-	text-rendering:optimizeLegibility;
-	color: var(--b-c);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1.5;
-	font-size: 10px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+:focus,
+:active {
+  outline: none;
 }
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer; background-color: transparent;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none; color: inherit;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h4,h5,h6{font-size:inherit;font-weight: 400;font-size: 45px; color: var(--b-c);}
-h2,h3{font-size:inherit;font-weight: 400;font-size: 55px; color: var(--b-c);}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+  font-size: 45px;
+  color: var(--b-c);
+}
+h2,
+h3 {
+  font-size: inherit;
+  font-weight: 400;
+  font-size: 55px;
+  color: var(--b-c);
+}
 /*Кінець обнулення */

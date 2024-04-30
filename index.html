@@ -1,182 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GoTrip</title>
-	<link rel="stylesheet" href="Style/style.css">
-	<link rel="stylesheet" href="Style/reset.css">
-	<link rel="stylesheet" href="Style/media.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-	<header class="header">
-		<div class="container">
-			<nav class="nav">
-				<h1 class="logo__text">
-					<a href="#" class="logo__link">GoTrip</a>
-				</h1>
-				<input id="headerbtn" type="checkbox" class="header__checkbox__btn">
-				<label class="header__label__open" for="headerbtn">
-					<img class="header__nav__btn" src="img/btn.png" alt="">
-				</label>	
-				<ul class="header__list">
-					<li class="header__list__item">
-						<a href="#" class="header__list__link header__list__link__active">
-							Home
-						</a>
-						<div class="active__item"></div>
-					</li>
-					<li class="header__list__item">
-						<a href="#" class="header__list__link">
-							Services
-						</a>
-						<div class="active__item"></div>
-					</li>
-					<li class="header__list__item">
-						<a href="#" class="header__list__link">
-							Pricing
-						</a>
-						<div class="active__item"></div>
-					</li>
-					<li class="header__list__item">
-						<a href="#" class="header__list__link">
-							Contact
-						</a>
-						<div class="active__item"></div>
-					</li>
-				</ul>
-				<ul class="header__list__btn">
-					<li class="header__list__btn__item">
-						<button class="header__btn header__btn1"><p>Sign up</p></button>
-						<div class="active__item__btn active__item__btn1"></div>
-					</li>
-					<li class="header__list__btn__item">
-						<button class="header__btn header__btn2">Login</button>
-						<div class="active__item__btn active__item__btn2"></div>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<section class="header__present">
-			<div class="container">	
-				<div class="header__left">
-					<strong class="header__strong">
-						exsplore the world
-					</strong>
-					<h2 class="header__title">
-						Explore The Natural
-						Beauty Of Halmahera
-						With Us
-					</h2>
-					<p class="header__text">
-						explore the beauty of god's earth in a beautiful forest and have fun
-					</p>
-					<button class="header__present__btn">
-						<div class="hover__box"></div>
-						<p class="btn__text__down">Exsplore Now</p>
-						<p class="btn__text present">Exsplore Now</p>
-						<div class="gradient__btn"></div>
-					</button>
-				</div>
-				<img src="img/women.png" alt="women" class="header__tight__img">
-			</div>
-		</section>
-	</header>
-	<main class="main">
-		<section class="slide">
-			<div class="container__right">
-				<div class="slide__inner">
-					<div class="slide__left">
-						<h3 class="slide__title">
-							<span>Choice Of</span> Destinations
-						</h3>
-						<p class="slide__text header__text">
-							explore the beauty of god's earth in a beautiful forest and have fun
-						</p>
-						<button class="header__present__btn">
-							<div class="hover__box"></div>
-							<p class="btn__slide__text btn__slide__text__down btn__text__down ">Exsplore Now</p>
-							<p class="btn__slide__text btn__text">Exsplore Now</p>
-							<div class="gradient__btn"></div>
-						</button>
-					</div>
-					<div class="slide__right">
-						<input class="slider__radio__btn one" name="slider__nav" type="radio" id="slide__btn__start" checked>
-						<input class="slider__radio__btn two" name="slider__nav" type="radio" id="slide__btn__center">
-						<input class="slider__radio__btn three" name="slider__nav" type="radio" id="slide__btn__end">
-						<div class="slide__btn">
-							<label for="slide__btn__start"><img class="slide__btn__img slide__btn__img__left" src="img/dir.svg" alt=""></label>
-							<label for="slide__btn__center"><img class="slide__btn__img slide__btn__img__center" src="img/dir.svg" alt=""></label>
-							<label for="slide__btn__end"><img class="slide__btn__img slide__btn__img__right" src="img/dir.svg" alt=""></label>
-						</div>
-						<div class="box__slider">
-							<div class="slider">
-								<img class="slide__img slide__img1" src="img/deer-forest.jpg" alt="">
-								<img class="slide__img slide__img2" src="img/p-f.jpg" alt="">
-								<img id="img2" class="slide__img slide__img3" src="img/deer-forest.jpg" alt="">
-								<img class="slide__img slide__img1" src="img/deer-forest.jpg" alt="">
-								<img class="slide__img slide__img2" src="img/p-f.jpg" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="comment">
-			<div class="container">
-				<figure class="commment__inner">
-					<img class="comment__img" src="img/page.jpg" alt="">
-					<figcaption class="comment__discription">
-						<div class="discription__wrapper__hover"></div>
-						<div class="discription__wrapper">
-							<span class="star star1"><img src="img/star_item.png" alt="star" class="star__img"></span>
-							<span class="star star2"><img src="img/star_item.png" alt="star" class="star__img"></span>
-							<span class="star star3"><img src="img/star_item.png" alt="star" class="star__img1"></span>
-							<span class="star star4"><img src="img/star__item.png" alt="star" class="star__img1"></span>
-							<span class="star star5"><img src="img/star_item.png" alt="star" class="star__img2"></span>
-							<span class="star star6"><img src="img/star__item.png" alt="star" class="star__img2"></span>
-							<span class="star star7"><img src="img/star_item.png" alt="star" class="star__img3"></span>
-						</div>
-						<h3 class="comment__title">
-							What do customers say about us?
-						</h3>
-						<figure class="comment__people">
-							<img class="comment__people__img" src="img/tr.png" alt="">
-							<figcaption>
-								<strong class="comment__people__strong">Alpanasap</strong>
-								<p class="comment__people__text">Japung, Indonesia</p>
-							</figcaption>
-						</figure>
-						<p class="comment__text">
-							Very satisfying service makes it comfortable, a beautiful place in the world. 
-						</p>
-						<img src="img/star.png" alt="star">
-					</figcaption>
-				</figure>
-			</div>
-		</section>
-		<section class="start">
-			<div class="container connect">
-				<h3 class="comment__title connect">
-					Prepare Yourself And
-					Start Exploring With Us.
-				</h3>
-				<p class="slide__text header__text connect">
-					There's the best discount for you today.
-				</p>
-				<button class="header__present__btn connect">
-					<div class="hover__box"></div>
-					<p class="btn__slide__text btn__slide__text__down btn__text__down ">Get Started</p>
-					<p class="btn__slide__text btn__text">Get Started</p>
-					<div class="gradient__btn"></div>
-				</button>
-			</div>
-		</section>
-	</main>
-	<footer class="footer">
-	</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoTrip</title>
+    <link rel="stylesheet" href="Style/style.css" />
+    <link rel="stylesheet" href="Style/reset.css" />
+    <link rel="stylesheet" href="Style/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <h1 class="logo__text">
+            <a href="#" class="logo__link">GoTrip</a>
+          </h1>
+          <input id="headerbtn" type="checkbox" class="header__checkbox__btn" />
+          <label class="header__label__open" for="headerbtn">
+            <img class="header__nav__btn" src="img/btn.png" alt="" />
+          </label>
+          <ul class="header__list">
+            <li class="header__list__item">
+              <a href="#" class="header__list__link header__list__link__active">
+                Home
+              </a>
+              <div class="active__item"></div>
+            </li>
+            <li class="header__list__item">
+              <a href="#" class="header__list__link"> Services </a>
+              <div class="active__item"></div>
+            </li>
+            <li class="header__list__item">
+              <a href="#" class="header__list__link"> Pricing </a>
+              <div class="active__item"></div>
+            </li>
+            <li class="header__list__item">
+              <a href="#" class="header__list__link"> Contact </a>
+              <div class="active__item"></div>
+            </li>
+          </ul>
+          <ul class="header__list__btn">
+            <li class="header__list__btn__item">
+              <button class="header__btn header__btn1">Sign up</button>
+              <div class="active__item__btn active__item__btn1"></div>
+            </li>
+            <li class="header__list__btn__item">
+              <button class="header__btn header__btn2">Login</button>
+              <div class="active__item__btn active__item__btn2"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="header__present">
+        <div class="container">
+          <div class="header__left">
+            <strong class="header__strong"> exsplore the world </strong>
+            <h2 class="header__title">
+              Explore The Natural Beauty Of Halmahera With Us
+            </h2>
+            <p class="header__text">
+              explore the beauty of god's earth in a beautiful forest and have
+              fun
+            </p>
+            <button class="header__present__btn">
+              <span class="hover__box"></span>
+              <span class="btn__text__down">Exsplore Now</span>
+              <span class="btn__text present">Exsplore Now</span>
+              <span class="gradient__btn"></span>
+            </button>
+          </div>
+          <img src="img/women.png" alt="women" class="header__tight__img" />
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <section class="slide">
+        <div class="container__right">
+          <div class="slide__inner">
+            <div class="slide__left">
+              <h3 class="slide__title"><span>Choice Of</span> Destinations</h3>
+              <p class="slide__text header__text">
+                explore the beauty of god's earth in a beautiful forest and have
+                fun
+              </p>
+              <button class="header__present__btn">
+                <span class="hover__box"></span>
+                <span
+                  class="btn__slide__text btn__slide__text__down btn__text__down"
+                >
+                  Exsplore Now
+                </span>
+                <span class="btn__slide__text btn__text">Exsplore Now</span>
+                <span class="gradient__btn"></span>
+              </button>
+            </div>
+            <div class="slide__right">
+              <input
+                class="slider__radio__btn one"
+                name="slider__nav"
+                type="radio"
+                id="slide__btn__start"
+                checked
+              />
+              <input
+                class="slider__radio__btn two"
+                name="slider__nav"
+                type="radio"
+                id="slide__btn__center"
+              />
+              <input
+                class="slider__radio__btn three"
+                name="slider__nav"
+                type="radio"
+                id="slide__btn__end"
+              />
+              <div class="slide__btn">
+                <label for="slide__btn__start"
+                  ><img
+                    class="slide__btn__img slide__btn__img__left"
+                    src="img/dir.svg"
+                    alt=""
+                /></label>
+                <label for="slide__btn__center"
+                  ><img
+                    class="slide__btn__img slide__btn__img__center"
+                    src="img/dir.svg"
+                    alt=""
+                /></label>
+                <label for="slide__btn__end"
+                  ><img
+                    class="slide__btn__img slide__btn__img__right"
+                    src="img/dir.svg"
+                    alt=""
+                /></label>
+              </div>
+              <div class="box__slider">
+                <div class="slider">
+                  <img
+                    class="slide__img slide__img1"
+                    src="img/deer-forest.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="slide__img slide__img2"
+                    src="img/p-f.jpg"
+                    alt=""
+                  />
+                  <img
+                    id="img2"
+                    class="slide__img slide__img3"
+                    src="img/deer-forest.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="slide__img slide__img1"
+                    src="img/deer-forest.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="slide__img slide__img2"
+                    src="img/p-f.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comment">
+        <div class="container">
+          <figure class="commment__inner">
+            <img class="comment__img" src="img/page.jpg" alt="" />
+            <figcaption class="comment__discription">
+              <div class="discription__wrapper__hover"></div>
+              <div class="discription__wrapper">
+                <span class="star star1"
+                  ><img src="img/star_item.png" alt="star" class="star__img"
+                /></span>
+                <span class="star star2"
+                  ><img src="img/star_item.png" alt="star" class="star__img"
+                /></span>
+                <span class="star star3"
+                  ><img src="img/star_item.png" alt="star" class="star__img1"
+                /></span>
+                <span class="star star4"
+                  ><img src="img/star__item.png" alt="star" class="star__img1"
+                /></span>
+                <span class="star star5"
+                  ><img src="img/star_item.png" alt="star" class="star__img2"
+                /></span>
+                <span class="star star6"
+                  ><img src="img/star__item.png" alt="star" class="star__img2"
+                /></span>
+                <span class="star star7"
+                  ><img src="img/star_item.png" alt="star" class="star__img3"
+                /></span>
+              </div>
+              <h3 class="comment__title">What do customers say about us?</h3>
+              <figure class="comment__people">
+                <img class="comment__people__img" src="img/tr.png" alt="" />
+                <figcaption>
+                  <strong class="comment__people__strong">Alpanasap</strong>
+                  <p class="comment__people__text">Japung, Indonesia</p>
+                </figcaption>
+              </figure>
+              <p class="comment__text">
+                Very satisfying service makes it comfortable, a beautiful place
+                in the world.
+              </p>
+              <img src="img/star.png" alt="star" />
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="start">
+        <div class="container connect">
+          <h3 class="comment__title connect">
+            Prepare Yourself And Start Exploring With Us.
+          </h3>
+          <p class="slide__text header__text connect">
+            There's the best discount for you today.
+          </p>
+          <button class="header__present__btn connect">
+            <span class="hover__box"></span>
+            <span
+              class="btn__slide__text btn__slide__text__down btn__text__down"
+            >
+              Get Started
+            </span>
+            <span class="btn__slide__text btn__text">Get Started</span>
+            <span class="gradient__btn"></span>
+          </button>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <h3 class="subscribe__title">Subscribe To Our Newsletter</h3>
+          <form action="#" class="subscribe">
+            <input
+              type="email"
+              placeholder=" Yourmail@mail.com"
+              class="subscribe__email"
+            />
+            <button class="subscribe__btn header__present__btn connect">
+              <span class="hover__box"></span>
+              <span
+                class="btn__slide__text btn__slide__text__down btn__text__down"
+              >
+                Subscribe
+              </span>
+              <span class="btn__slide__text btn__text">Subscribe</span>
+              <span class="gradient__btn"></span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="nav footer__nav">
+          <h1 class="logo__text logo__footer__text">
+            <a href="#" class="logo__link">GoTrip</a>
+          </h1>
+          <input id="footerbtn" type="checkbox" class="header__checkbox__btn" />
+          <label class="footer__label__open" for="footerbtn">
+            <img class="header__nav__btn" src="img/btn.png" alt="" />
+          </label>
+          <ul class="header__list footer__list">
+            <li class="header__list__item">
+              <a href="#" class="header__list__link header__list__link__active"
+                >Home</a
+              >
+              <div class="active__item"></div>
+            </li>
+            <li class="header__list__item">
+              <a href="#" class="header__list__link"> Services </a>
+              <div class="active__item"></div>
+            </li>
+            <li class="header__list__item">
+              <a href="#" class="header__list__link"> Pricing </a>
+              <div class="active__item"></div>
+            </li>
+            <li class="header__list__item">
+              <a href="#" class="header__list__link"> Contact </a>
+              <div class="active__item"></div>
+            </li>
+          </ul>
+          <ul class="header__list__btn footer__list__btn">
+            <li class="header__list__btn__item header__list__btn__item">
+              <button class="header__btn header__btn1">Sign up</button>
+              <div class="active__item__btn active__item__btn1"></div>
+            </li>
+            <li class="header__list__btn__item">
+              <button class="header__btn header__btn2">Login</button>
+              <div class="active__item__btn active__item__btn2"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
